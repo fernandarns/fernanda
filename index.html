@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>FELU Arquitetura e Urbanismo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="/node_modules/aos/dist/aos.css" />
+</head>
+
+<body>
+  <script src="script.js"></script>
+  <div class="conteiner">
+    <header class="cabecalho">
+      <img class="cabecalho-imagem" src="img/logofelu.png" alt="FELU" title="FELU" width="160"></a>
+      <nav class="cabecalho-menu">
+        <a href="#">
+          <li class="menu">Início</li>
+        </a>
+        <a href="#quemsomos">
+          <li class="menu">Quem somos</li>
+        </a>
+        <a href="#">
+          <li class="menu">Projetos</li>
+        </a>
+        <button>
+          <li class="menu">Contato</li>
+        </button>
+      </nav>
+    </header>
+
+    <main class="conteudo">
+
+      <section class="wrapper">
+        <div class="parallax">
+          <p></p>
+        </div>
+      </section>
+
+      <section class="textfoto" data-aos="fade-left" id="quemsomos">
+        <img src="img/fotoarqs.svg" alt="topo" width="330">
+        <div class="conteiner-text" data-aos="fade-right">
+          <p1>
+            Prazer, <br>somos a <b>FELU Arquitetura e
+              Urbanismo!</b> <br>O studio foi criado pelos
+            amigos<br> <b>Fernanda Oliveira e Lucas Paixão</b><br>
+            e nossa parceria iniciou em 2017, durante<br>
+            a faculdade de Arquitetura e Urbanismo<br>
+            cursada na Multivix.
+            </p>
+            <p2>
+              A FELU realiza <b>projetos de arquitetura e
+                interiores</b> para<br> reformas e construções. Atuando em Projeto Residencial,<br>
+              Comercial, Cultural, Paisagismo,
+              Conforto Ambiental,<br> Urbanista,
+              consultoria presencial /online.
+              </p>
+              <button class="botaosec2"><b>Iniciar conversa</b>
+              </button>
+        </div>
+      </section>
+
+      <section>
+        <div class="frase">
+        </div>
+      </section>
+
+     
+      <footer>
+        <div id="footer_content">
+          <div id="footer_contacts">
+            <h1>Logo</h1>
+            <p>Arquitetura e urbanismo</p>
+
+            <div id="footer_social_media">
+              <a href="#" class="footer-link" id="instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+
+              <a href="#" class="footer-link" id="facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+
+              <a href="#" class="footer-link" id="whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <h3>ACESSE</h3>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Quem somos</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Projetos</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Enviar mensagem</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <h3>CONTATOS</h3>
+            </li>
+            <li>
+              <a href="#" class="footer-link">felu@gmail.com</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">27 999999999</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">27 888888888</a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div id="footer_copyright">
+          &#169
+          2023 all rights reserved
+        </div>
+      </footer>
+
+    </main>
+    <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+    <script src="/node_modules/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="/node_modules/aos/dist/aos.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 500
+      });
+      AOS.init({
+        offset: 200,
+        duration: 1200,
+        easing: 'ease-in',
+        delay: 500,
+      });
+    </script>
+</body>
+
+</html>
