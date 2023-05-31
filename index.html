@@ -9,7 +9,9 @@
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="/node_modules/aos/dist/aos.css" />
+  <link rel="stylesheet" href="/node_modules/aos/dist/aos.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </script>
 </head>
 
 <body>
@@ -18,13 +20,13 @@
     <header class="cabecalho">
       <img class="cabecalho-imagem" src="img/logofelu.png" alt="FELU" title="FELU" width="160"></a>
       <nav class="cabecalho-menu">
-        <a href="#">
+        <a href="">
           <li class="menu">Início</li>
         </a>
         <a href="#quemsomos">
           <li class="menu">Quem somos</li>
         </a>
-        <a href="#">
+        <a href="projetos.html">
           <li class="menu">Projetos</li>
         </a>
         <button>
@@ -41,9 +43,9 @@
         </div>
       </section>
 
-      <section class="textfoto" data-aos="fade-left" id="quemsomos">
-        <img src="img/fotoarqs.svg" alt="topo" width="330">
-        <div class="conteiner-text" data-aos="fade-right">
+      <section class="textfoto" id="quemsomos">
+        <img src="img/fotoarqs.svg" alt="topo" width="330" id="foto" data-aos="fade-down">
+        <div class="conteiner-text" id="texto" data-aos="fade-left">
           <p1>
             Prazer, <br>somos a <b>FELU Arquitetura e
               Urbanismo!</b> <br>O studio foi criado pelos
@@ -67,14 +69,11 @@
       <section>
         <div class="frase">
         </div>
-      </section>
-
-     
+      </section>    
       <footer>
         <div id="footer_content">
           <div id="footer_contacts">
-            <h1>Logo</h1>
-            <p>Arquitetura e urbanismo</p>
+            <img class="cabecalho-imagem" src="img/logov2.png" alt="FELU" title="FELU" width="300"></a>
 
             <div id="footer_social_media">
               <a href="#" class="footer-link" id="instagram">
@@ -112,13 +111,13 @@
               <h3>CONTATOS</h3>
             </li>
             <li>
-              <a href="#" class="footer-link">felu@gmail.com</a>
+              felu@gmail.com
             </li>
             <li>
-              <a href="#" class="footer-link">27 999999999</a>
+              27 999999999
             </li>
             <li>
-              <a href="#" class="footer-link">27 888888888</a>
+              27 888888888
             </li>
           </ul>
 
@@ -129,22 +128,17 @@
           2023 all rights reserved
         </div>
       </footer>
-
     </main>
-    <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
-    <script src="/node_modules/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-    <script src="/node_modules/aos/dist/aos.js"></script>
-    <script>
-      var scroll = new SmoothScroll('a[href*="#"]', {
-        speed: 500
-      });
-      AOS.init({
-        offset: 200,
-        duration: 1200,
-        easing: 'ease-in',
-        delay: 500,
-      });
-    </script>
+    <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+  <script src="/node_modules/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 300,
+      duration: 2000
+    });
+  </script>
 </body>
 
 </html>

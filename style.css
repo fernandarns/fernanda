@@ -9,6 +9,11 @@ body {
   height: 100vh;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 .conteiner{
   max-width: 1280px;
   margin: 0;
@@ -155,8 +160,6 @@ div.frase{
   
 }
 
-
-
 .sec-textfoto {
   display: flex;
   flex-direction: column;
@@ -170,7 +173,6 @@ div.frase{
     text-align: center;
   }
 
- 
 
 footer{
   width: 100%;
@@ -280,5 +282,18 @@ footer{
   padding: 1.3rem;
   font-weight: 100;
   color: #fff;
+}
+
+@media screen and (max-width: 768px){
+  #footer_content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 426px){
+  #footer_content {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3rem 2rem;
+  }
 }
 
